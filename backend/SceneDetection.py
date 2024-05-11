@@ -7,7 +7,7 @@ def generate_caption(image):
     url = "https://open-ai21.p.rapidapi.com/imagecaptioning"
     files = {'file': image}
     headers = {
-        "X-RapidAPI-Key": "5e80c89a7fmsh2ce45fb89d4b858p15da95jsn525b7230bc83",
+        "X-RapidAPI-Key": "XXXXXXXXXXXXXXX",
         "X-RapidAPI-Host": "open-ai21.p.rapidapi.com"
     }
     response = requests.post(url, files=files, headers=headers)

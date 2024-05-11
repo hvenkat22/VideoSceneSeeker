@@ -7,14 +7,14 @@ import assemblyai as aai
 app = Flask(__name__)
 
 # Set up AssemblyAI API key
-aai.settings.api_key = "3d562e41f9c045b591814f2243585398"
+aai.settings.api_key = ""
 
 # Function to generate caption for an image using OpenAI API
 def generate_caption(image):
     url = "https://open-ai21.p.rapidapi.com/imagecaptioning"
     files = {'file': image}
     headers = {
-        "X-RapidAPI-Key": "5e80c89a7fmsh2ce45fb89d4b858p15da95jsn525b7230bc83",
+        "X-RapidAPI-Key": "XXXXXXXXXXXXXXXXXXXXXXXXX",
         "X-RapidAPI-Host": "open-ai21.p.rapidapi.com"
     }
     response = requests.post(url, files=files, headers=headers)
